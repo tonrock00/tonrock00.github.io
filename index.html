@@ -8,15 +8,17 @@
 </head>
 <body>
     <div class="container">
-        <h3>Enter top secret!!!!</h3>
-        <input type="password" id="passwordInput" placeholder="Enter secret">
-        <button id="encodeButton">→</button>
-        <div class="output">
-            <input type="text" id="encodedPassword" readonly placeholder="Encoded secret">
-            <button id="copyButton">📋</button>
+        <h2>Enter top secret!!!!</h2>
+        <div class="input-group">
+            <input type="password" id="passwordInput" placeholder="Enter your secret" autocomplete="off">
+            <button type="button" id="togglePassword" class="icon-button">👁️</button>
+        </div>
+        <button id="encodeButton" class="arrow-button">➡️</button>
+        <div class="output-group">
+            <input type="text" id="encodedPassword" readonly placeholder="Your encoded secret">
+            <button id="copyButton" class="icon-button">📋</button>
             <span id="copyMessage" class="hidden">Copied to clipboard!</span>
         </div>
-        
     </div>
 
     <script src="script.js"></script>

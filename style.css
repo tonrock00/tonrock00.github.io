@@ -1,5 +1,6 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,28 +9,99 @@ body {
 }
 
 .container {
-    border: 2px solid black;
+    background: #ffffff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
     padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 300px;
 }
 
-input {
-    width: 80%;
-    padding: 5px;
-    margin-bottom: 10px;
+h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #333;
 }
 
-button {
-    padding: 5px 10px;
-    cursor: pointer;
-}
 
-.output {
-    margin-top: 10px;
+.input-group {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+#togglePassword {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.output-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.input-group input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.output-group input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px 10px;
+    color: #555;
+}
+
+.icon-button:hover {
+    color: #000;
+}
+
+.arrow-button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.arrow-button:hover {
+    background: #0056b3;
+}
+
+.output-group input {
+    background: #f4f4f4;
+    cursor: not-allowed;
+}
+
+input:focus {
+    outline: none;
+    border-color: #007BFF;
 }
 
 #copyMessage {
@@ -39,8 +111,4 @@ button {
 
 .hidden {
     display: none;
-}
-
-input:focus::selection {
-    background: transparent;
 }

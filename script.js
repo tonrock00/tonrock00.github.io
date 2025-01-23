@@ -3,13 +3,14 @@ const encodeButton = document.getElementById('encodeButton');
 const encodedPassword = document.getElementById('encodedPassword');
 const copyButton = document.getElementById('copyButton');
 const copyMessage = document.getElementById('copyMessage');
+const togglePassword = document.getElementById('togglePassword');
 
-const secretKey = "MySupraTopSecretKey2025";
+const secretKey = "SecretToSecret2025";
 
 encodeButton.addEventListener('click', () => {
     const password = passwordInput.value;
     if (password) {
-        const combined = password + secretKey;
+        const combined = secretKey + (password + secretKey);
         encodedPassword.value = btoa(combined);
     } else {
         alert('Please enter a secret');
@@ -49,4 +50,11 @@ passwordInput.addEventListener('cut', (e) => {
 
 passwordInput.addEventListener('contextmenu', (e) => {
     e.preventDefault();
+});
+
+togglePassword.addEventListener('click', () => {
+    const type = passwordInput.type === 'password' ? 'text' : 'password';
+    passwordInput.type = type;
+
+    togglePassword.textContent = type === 'password' ? '👁️' : '🙈';
 });
