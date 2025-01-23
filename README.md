@@ -4,5 +4,5 @@ This is little funny project.
 
 ## Concept
 
-![Concept](tonrock00.github.io/concept.png)
+![Concept](http://tonrock00.github.io/concept.png)
 
