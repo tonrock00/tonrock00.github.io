@@ -31,3 +31,22 @@ copyButton.addEventListener('click', () => {
         alert('No encoded secret to copy');
     }
 });
+
+passwordInput.addEventListener('copy', (e) => {
+    e.preventDefault();
+    alert('Copy is not allowed');
+});
+
+passwordInput.addEventListener('paste', (e) => {
+    e.preventDefault();
+    alert('Paste is not allowed');
+});
+
+passwordInput.addEventListener('cut', (e) => {
+    e.preventDefault();
+    alert('Cut is not allowed');
+});
+
+passwordInput.addEventListener('contextmenu', (e) => {
+    e.preventDefault();
+});

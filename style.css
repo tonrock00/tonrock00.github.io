@@ -40,3 +40,7 @@ button {
 .hidden {
     display: none;
 }
+
+input:focus::selection {
+    background: transparent;
+}
