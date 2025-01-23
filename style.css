@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    border: 2px solid black;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+}
+
+input {
+    width: 80%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.output {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#copyMessage {
+    font-size: 14px;
+    color: green;
+}
+
+.hidden {
+    display: none;
+}
